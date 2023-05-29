@@ -1,5 +1,8 @@
 <script>
 import axios from 'axios';
+
+import MainCard from './MainCard.vue';
+
 export default {
 
     name: 'AppMain',
@@ -10,6 +13,10 @@ export default {
             works: [],
             
         }
+    },
+
+    components: {
+        MainCard,
     },
 
     created() {
@@ -23,9 +30,17 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        
+
+    <div class="container d-flex gap-3 py-5 justify-content-center">
+
+        <div v-for="(work, index) in works" :key="index">
+
+            <MainCard :work="work"></MainCard>
+
+        </div>
+
     </div>
+
 </template>
 
 <style lang="scss" scoped>
