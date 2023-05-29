@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-    {{ console.log(work) }}
+    
    <div class="card" style="width: 18rem;">
         <img :src="getImage()" class="card-img-top" alt="...">
         <div class="card-body">

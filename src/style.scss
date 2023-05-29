@@ -4,4 +4,11 @@
     color: #333;
 }
 
+.card{
+    width: calc(100% / 3 - 1rem / 3 * 2);
+}
 
+.card-img, .card-img-top, .card-img-bottom{
+    height: 285px;
+    object-fit: cover;
+}
