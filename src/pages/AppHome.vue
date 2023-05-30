@@ -81,12 +81,12 @@ export default {
 
 <template>
 
-    <div class="container d-flex gap-3 py-5 justify-content-center flex-wrap">
+    <div id="home-container" class="container d-flex gap-3 py-5 justify-content-center flex-wrap">
 
-        <div id="card-container" v-for="(work, index) in works" :key="index">
-
-            <MainCard :work="work" ></MainCard>
-
+        <div v-for="(work, index) in works" :key="index">
+           {{ console.log(work)}}
+            <MainCard  :work="work" ></MainCard>
+            <router-link class="btn btn-primary my-2" :to="{name: 'prova' , params: {posts: work.image, title: work.title}}">Mostra</router-link>
         </div>
 
     </div>

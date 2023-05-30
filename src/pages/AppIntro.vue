@@ -18,5 +18,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    
+    #container{
+        height: calc(100% - 57px);
+    }
 </style>
