@@ -54,5 +54,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    
+    .fa-brands{
+    color: #333;
+}
+
+.card{
+    width: calc(100% / 3 - 1rem / 3 * 2);
+}
+
+.card-img, .card-img-top, .card-img-bottom{
+    height: 250px;
+    object-fit: cover;
+}
 </style>
