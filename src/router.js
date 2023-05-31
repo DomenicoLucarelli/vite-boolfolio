@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import AppIntro from './pages/AppIntro.vue';
 import AppHome from './pages/AppHome.vue';
-import Prova from './pages/Prova.vue';
+import SingleCard from './pages/SingleCard.vue';
 
 
 const router = createRouter({
@@ -18,15 +18,15 @@ const router = createRouter({
         },
 
         {
-            path: '/home/',
+            path: '/home',
             name: 'home',
             component: AppHome ,
         },
 
         {
-            path: '/prova/:posts/:title',
-            name: 'prova',
-            component: Prova ,
+            path: '/card/:slug',
+            name: 'singleCard',
+            component: SingleCard ,
         }
     ]
 });
